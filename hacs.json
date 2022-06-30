@@ -1,0 +1,6 @@
+{
+  "content_in_root": true,
+  "homeassistant": "0.70.0",
+  "name": "seven",
+  "render_readme": true
+}
