@@ -4,6 +4,7 @@
   ],
   "documentation": "https://github.com/seven-io/home-assistant",
   "domain": "seven",
+  "iot_class": "assumed_state",
   "issue_tracker": "https://github.com/seven-io/home-assistant/issues",
   "name": "seven",
   "version": "0.0.1"
