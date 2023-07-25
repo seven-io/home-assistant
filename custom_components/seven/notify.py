@@ -77,7 +77,7 @@ class SevenNotificationService(BaseNotificationService):
 
             success = res.json().get('success')
 
-            if res.status_code is not HTTPStatus.OK or (success not in ['100', '101']):
+            if res.status_code is not HTTPStatus.OK or (success not in ['100', '101', '200']):
                 _LOGGER.error("Error %s : (Code %s)", res.status_code, success)
 
 
