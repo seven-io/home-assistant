@@ -77,7 +77,9 @@ class SevenNotificationService(BaseNotificationService):
 
             success = res.json().get('success')
 
-            if success not in ['100', '101', '200']:
+            if success in ['100', '101', '200']:
+                _LOGGER.info("Message sent to %s", recipient)
+            else:
                 _LOGGER.error("Error %s : (Code %s)", res.status_code, success)
 
 
