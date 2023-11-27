@@ -37,7 +37,32 @@ notify:
 ```
 
 Check out the [example](./screenshots/automation_action_call_service.png) on how to
-configure a service call on automation.
+configure a service call on automation when using the GUI.
+
+Note that you can also make a minimal configuration to `configuration.yaml` where all the remaining necessary configuartion will be made in the automation like:
+```yaml
+notify:
+  - platform: seven
+    name: seven_sms
+    api_key: INSERT_YOUR_SMS77_API_KEY_HERE # see https://help.sms77.io/en/api-key-access
+```
+
+Use the following example, starting from the automation GUI if you want to manually configure the automation like when sending sensor data. Just add into the message field '{{ states("sensor.sensor_name") }}' and manual configuration will be enabled:
+
+```
+service: notify.seven_sms
+data:
+  data:
+    sender: From_Name
+  message: '{{ states("sensor.sensor_name") }}'
+  target: Recipient_Phone_Number(s)
+```
+
+Follow the [Home Assistant - TEST IF IT WORKS](https://www.home-assistant.io/integrations/notify#test-if-it-works) documentation for testing your automation.
+
+## API Communication Security
+
+When there is communication via the API to the seven.io host, this communication is secured via `https`. 
 
 ## Support
 

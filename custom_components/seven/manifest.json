@@ -7,5 +7,5 @@
   "iot_class": "assumed_state",
   "issue_tracker": "https://github.com/seven-io/home-assistant/issues",
   "name": "seven",
-  "version": "0.0.1"
+  "version": "0.0.2"
 }
