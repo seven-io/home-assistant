@@ -1,7 +1,7 @@
 
 <img src="https://www.seven.io/wp-content/uploads/Logo.svg" width=250>
 
-# `pandaedward` Fork of Official Home Assistant integration
+# Home Assistant integration
 
 This integration adds the possibility of sending SMS and making text-to-speech calls via [sms77](https://wwww.sms77.io).
 
