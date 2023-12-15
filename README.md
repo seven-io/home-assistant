@@ -1,4 +1,5 @@
-![sms77.io Logo](https://www.sms77.io/wp-content/uploads/2019/07/sms77-Logo-400x79.png "sms77.io Logo")
+
+<img src="https://www.seven.io/wp-content/uploads/Logo.svg" width=250>
 
 # `pandaedward` Fork of Official Home Assistant integration
 
