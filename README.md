@@ -1,5 +1,5 @@
 
-<img src="https://www.seven.io/wp-content/uploads/Logo.svg" width=250>
+<img src="https://www.seven.io/wp-content/uploads/Logo-with-darkmode.svg" width=250>
 
 # Home Assistant integration
 
@@ -50,7 +50,7 @@ notify:
 
 Use the following example, starting from the automation GUI if you want to manually configure the automation like when sending sensor data. Just add into the message field '{{ states("sensor.sensor_name") }}' and manual configuration will be enabled:
 
-```
+```yaml
 service: notify.seven_sms
 data:
   data:
