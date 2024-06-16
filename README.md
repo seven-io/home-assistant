@@ -48,7 +48,7 @@ notify:
     api_key: INSERT_YOUR_SMS77_API_KEY_HERE # see https://help.sms77.io/en/api-key-access
 ```
 
-Use the following example, starting from the automation GUI if you want to manually configure the automation like when sending sensor data. Just add into the message field '{{ states("sensor.sensor_name") }}' and manual configuration will be enabled:
+Use the following yaml example, entered via the automation GUI, if you want to manually configure the automation like when sending sensor data. Just add into the message field `'{{ states("sensor.sensor_name") }}'` and manual configuration will be enabled:
 
 ```yaml
 service: notify.seven_sms
@@ -61,9 +61,11 @@ data:
 
 Follow the [Home Assistant - TEST IF IT WORKS](https://www.home-assistant.io/integrations/notify#test-if-it-works) documentation for testing your automation.
 
+Consider changing the [automation mode](https://www.home-assistant.io/docs/automation/modes/) for the automation which defaults to `single` when created. If you expect a series of consecutive triggers for the same automation, only the current running will be processed when `single` is defined and a log warning is written . Setting this to `parallel` will process them all one by another.  
+
 ## API Communication Security
 
-When there is communication via the API to the seven.io host, this communication is secured via `https`. 
+When there is communication via the API to the `seven.io` host, this communication is secured via `https`. 
 
 ## Support
 
