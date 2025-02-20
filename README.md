@@ -3,7 +3,7 @@
 
 # Home Assistant integration
 
-This integration adds the possibility of sending SMS and making text-to-speech calls via [sms77](https://wwww.sms77.io).
+This integration adds the possibility of sending SMS and making text-to-speech calls via [sms77](https://www.sms77.io).
 
 ## Installation
 
