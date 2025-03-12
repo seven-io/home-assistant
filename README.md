@@ -3,7 +3,7 @@
 
 # Home Assistant integration
 
-This integration adds the possibility of sending SMS and making text-to-speech calls via [sms77](https://www.sms77.io).
+This integration adds the possibility of sending SMS and making text-to-speech calls via [seven](https://www.seven.io).
 
 ## Installation
 
@@ -25,14 +25,14 @@ Add to `configuration.yaml` - usually in `~/.homeassistant/`:
 ```yaml
 notify:
   - platform: seven
-    sender: HomeAssist # defaults to hass - see https://help.sms77.io/en/set-sender-id
+    sender: HomeAssist # defaults to hass - see https://help.seven.io/en/set-sender-id
     name: seven_sms
-    api_key: INSERT_YOUR_SMS77_API_KEY_HERE # see https://help.sms77.io/en/api-key-access
+    api_key: INSERT_YOUR_SEVEN_API_KEY_HERE # see https://help.seven.io/en/api-key-access
     recipient: 01716992343 # or specify multiple numbers e.g. [01771783130, 01716992343]
   - platform: seven
-    sender: +491771783130 # - see https://help.sms77.io/en/shared-numbers
+    sender: +491771783130 # - see https://help.seven.io/en/shared-numbers
     name: seven_voice
-    api_key: INSERT_YOUR_SMS77_API_KEY_HERE # see https://help.sms77.io/en/api-key-access
+    api_key: INSERT_YOUR_SEVEN_API_KEY_HERE # see https://help.seven.io/en/api-key-access
     recipient: [01771783130, 01716992343]
     type: 'voice'
 ```
@@ -69,6 +69,6 @@ When there is communication via the API to the `seven.io` host, this communicati
 
 ## Support
 
-Need help? Feel free to [contact us](https://www.sms77.io/en/company/contact/).
+Need help? Feel free to [contact us](https://www.seven.io/en/company/contact/).
 
 [![MIT](https://img.shields.io/badge/License-MIT-teal.svg)](LICENSE)
