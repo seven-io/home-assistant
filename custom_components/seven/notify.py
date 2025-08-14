@@ -21,7 +21,7 @@ from homeassistant.const import (
 import homeassistant.helpers.config_validation as cv
 
 _LOGGER = logging.getLogger(__name__)
-BASE_API_URL = "https://gateway.sms77.io/api/"
+BASE_API_URL = "https://gateway.seven.io/api/"
 TIMEOUT = 5
 TYPE_SMS = "sms"
 PLATFORM_SCHEMA = vol.Schema(vol.All(PLATFORM_SCHEMA.extend({
