@@ -11,6 +11,7 @@ Automate SMS notifications and voice calls through your smart home. Get instant 
 
 - Home Assistant 2023.1.0 or newer
 - A seven.io account with API key ([sign up free](https://app.seven.io/signup))
+  - Make sure your API key has at least `balance`, `sms` and `voice` scopes configured.
 - Credits in your seven.io account for sending messages
 
 ## Installation
